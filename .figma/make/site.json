@@ -1,0 +1,11 @@
+{
+  "title": "Personal Planner Tool",
+  "description": "This planner tool enhances productivity by offering a user-friendly interface for organizing tasks and schedules, ideal for individuals and teams seeking efficiency.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

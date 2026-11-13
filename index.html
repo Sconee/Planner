@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="<!-- figma:lang -->">
+  <head>
+    <!-- figma:head-start -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><!-- figma:title --></title>
+    <!-- figma:head-end -->
+    <meta name="theme-color" content="#f6f7fb" />
+    <script>
+      // set the theme before first paint so there is no light/dark flash
+      try {
+        var t = (JSON.parse(localStorage.getItem("plannerV2.v1") || "{}").theme) || "system";
+        var d = t === "dark" || (t === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = d ? "dark" : "light";
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <!-- figma:body-start -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- figma:body-end -->
+  </body>
+</html>
